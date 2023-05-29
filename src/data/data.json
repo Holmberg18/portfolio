@@ -1,0 +1,9 @@
+{
+    "portfolio_data": {
+        "intro":{
+            "title": "Front-End React Developer",
+            "welcome": "Hi, I'm Jon Holmberg, a passionate Front-end React Developer based in San Francisco, CA.",
+            "tech_stack": "Tech Stack: "
+        }
+    }
+}
