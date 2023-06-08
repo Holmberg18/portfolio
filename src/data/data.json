@@ -3,7 +3,16 @@
         "intro":{
             "title": "Front-End React Developer",
             "welcome": "Hi, I'm Jon Holmberg, a passionate Front-end React Developer based in San Francisco, CA.",
-            "tech_stack": "Tech Stack: "
+            "tech_stack": "Tech Stack | "
+        },
+        "social_links":{
+            "github": "https://github.com/Holmberg18",
+            "linkedin": "https://www.linkedin.com/in/holmbergj"
+        },
+        "about":{
+            "title": "About Me",
+            "bio": "With six years of experience, I have specialized in building captivating user interfaces using JavaScript, React, and TypeScript. My expertise lies in developing dynamic and responsive web applications that provide seamless user experiences. By leveraging React's component-based architecture, I create reusable and modular UI elements, enhancing development efficiency. The integration of TypeScript into my workflow helps catch errors early, improves code readability, and enables effective collaboration within development teams."
         }
+        
     }
 }

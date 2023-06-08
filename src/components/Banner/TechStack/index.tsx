@@ -1,5 +1,11 @@
 import { FC } from 'react'
-import { TypeScriptSVG, ReactSVG, JavaScriptSVG, NextjsSVG} from '../SVG'
+import { 
+    TypeScriptSVG,
+    ReactSVG, 
+    JavaScriptSVG, 
+    NextjsSVG,
+    ReduxSVG
+} from '@/components/Banner/SVG'
 
 const TechStack: FC = () => {
     return(
@@ -8,6 +14,7 @@ const TechStack: FC = () => {
             <ReactSVG />
             <JavaScriptSVG />
             <NextjsSVG />
+            <ReduxSVG />
         </>
     )
 }

@@ -9,8 +9,10 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Image from 'react-bootstrap/Image'
 import Banner from './Banner'
-import TechStack from './TechStack'
-
+import TechStack from './Banner/TechStack'
+import SocialLinks from './Banner/SocialLinks'
+import About from './About'
+import Form from 'react-bootstrap/Form'
 
 
 export{
@@ -25,5 +27,8 @@ export{
     NavDropdown,
     Image,
     Banner,
-    TechStack
+    TechStack,
+    SocialLinks,
+    About,
+    Form
 }

@@ -1,15 +1,16 @@
 .banner-container{
     background-color: #ededed;
+
+    .profile-pic{
+        max-height: 20rem;
+    }
+    
+    .stack-info{
+        max-width: 30rem;
+    }
+    
+    p > svg{
+        margin: 0 .3rem;
+    }
 }
 
-.stack-info{
-    max-width: 30rem;
-}
-
-.profile-pic{
-    max-height: 20rem;
-}
-
-p > svg{
-    margin: 0 .3rem;
-}

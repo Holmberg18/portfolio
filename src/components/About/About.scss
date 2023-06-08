@@ -1,0 +1,18 @@
+$width: 100vw;
+$height: 100vh;
+
+.about-container{
+
+    height: $height;
+    max-height: 50rem;
+    align-items: center;
+
+    .bio-stack{
+        width: $width;
+        max-width: 30rem;
+    }
+    
+    .hero-pic{
+        max-height: 20rem;
+    }
+}
