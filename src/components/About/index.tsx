@@ -1,26 +1,24 @@
 import { FC, useContext, useMemo } from 'react'
-import {
-    Container,
-    Row,
-    Col,
-    Image,
-    Stack
-} from "@/components"
+import { Container, Row, Col, Image, Stack } from "@/components"
 import DataContext from '@/context/DataContext'
-import './About.scss'
 
 const About: FC = () => {
-
 
     const data: PortfolioData = useContext(DataContext)
     const about_data: JSONObject = useMemo(() => data?.portfolio_data.about,[data])
 
     return(
-        <Container fluid className="p-5 about-container d-flex justify-content-center">
-            <Row>
-                <Col className="d-flex justify-content-center flex-wrap">
-                    <Image fluid src={process.env.PUBLIC_URL + "images/wfh-hero.jpg"} className="hero-pic rounded" />
-                    <Stack className="px-5 py-3 bio-stack">
+        <Container fluid className="d-flex align-items-center h-100">
+            <Row className="justify-content-center">
+                <Col md="auto" xs={12} sm={10}>
+                    <Image
+                        fluid
+                        rounded
+                        src={process.env.PUBLIC_URL + "images/wfh-hero.jpg"} 
+                    />
+                </Col>
+                <Col lg={3} className="m-3">
+                    <Stack>
                         <h3>{about_data?.title}</h3>
                         <p>{about_data?.bio}</p>
                     </Stack>

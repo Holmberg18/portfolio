@@ -10,8 +10,8 @@ import {
 const TechStack: FC = () => {
     return(
         <>
-            <TypeScriptSVG />
             <ReactSVG />
+            <TypeScriptSVG />
             <JavaScriptSVG />
             <NextjsSVG />
             <ReduxSVG />

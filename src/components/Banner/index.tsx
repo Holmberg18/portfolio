@@ -14,24 +14,15 @@ import './Banner.scss'
 const Banner: FC = () => {
 
     const data: PortfolioData = useContext(DataContext)
-    const banner_data: JSONObject = useMemo(() : JSONObject => {
-        const { intro, social_links }: DataSection = data?.portfolio_data
-        return({
-            title: intro.title,
-            welcome: intro.welcome,
-            tech_stack: intro.tech_stack,
-            github: social_links.github,
-            linkedin: social_links.linkedin
-        })
-    }, [data])
+    const banner_data: JSONObject = useMemo(() => data?.portfolio_data.intro,[data])
 
     return(
-        <Container fluid className="p-5 banner-container d-flex justify-content-center">
+        <Container fluid className="banner-container d-flex justify-content-center p-5 ">
             <Row>
                 <Col className='d-flex flex-wrap justify-content-center'>
-                    <Stack className='stack-info'>
+                    <Stack className="mx-4 py-4">
                         <h1>{banner_data?.title}</h1>
-                        <p className='banner-welcome'>{banner_data?.welcome}</p>
+                        <p>{banner_data?.welcome}</p>
                         <p>
                             {banner_data?.tech_stack}
                             <TechStack />
@@ -43,9 +34,10 @@ const Banner: FC = () => {
                         />
                     </Stack>
                     <Image 
-                        className="profile-pic" 
+                        className="mx-5" 
                         fluid 
-                        src={process.env.PUBLIC_URL + "images/developer_profile.jpg"} 
+                        rounded
+                        src={process.env.PUBLIC_URL + "images/developer_profile.jpg"}
                     />
                 </Col>
             </Row>

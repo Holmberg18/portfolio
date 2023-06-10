@@ -4,6 +4,7 @@ import {
   Navigation, 
   Banner,
   About,
+  Project
 } from '@/components'
 import DataContext from '@/context/DataContext'
 import content from './data/data.json'
@@ -18,6 +19,7 @@ const App: FC = () => {
       <DataContext.Provider value={data}>
         <Banner />
         <About />
+        <Project />
       </DataContext.Provider>
     </Layout>
   );
