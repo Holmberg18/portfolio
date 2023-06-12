@@ -5,7 +5,7 @@ import {
     JavaScriptSVG, 
     NextjsSVG,
     ReduxSVG
-} from '@/components/Banner/SVG'
+} from '@/components/SVG'
 
 const TechStack: FC = () => {
     return(

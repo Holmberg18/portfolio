@@ -21,7 +21,16 @@
         },
         "project2":{
             "title": "Aether Mobile",
-            "bio": "A mobile device manufacturer site that allows users to purchase cellular devices. The website provides an interface for seraching, comparing, and purchasing smart phones"
+            "bio": "A mobile device manufacturer site that allows users to purchase cellular devices. The website provides an interface for searching, comparing, and purchasing smart phones"
+        },
+        "footer":{
+            "connected": "Feel free to connect with any of my social network accounts",
+            "name": "Jon Holmberg",
+            "bio": "Front End Developer",
+            "contact": "Contact",
+            "address": "1015 Continentals Way, Belmont, CA, 94002, US",
+            "email": "holmberg18@gmail.com",
+            "phone": "(415) 412-4970"
         }
         
     }

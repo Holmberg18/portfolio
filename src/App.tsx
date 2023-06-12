@@ -1,25 +1,31 @@
-import { FC } from 'react';
+import { FC, useRef, RefObject } from 'react';
 import { 
   Layout,
   Navigation, 
   Banner,
   About,
-  Project
+  Project,
+  Footer
 } from '@/components'
 import DataContext from '@/context/DataContext'
-import content from './data/data.json'
+import content from '@/data/data.json'
 import 'bootstrap/scss/bootstrap.scss'
 
 
 const App: FC = () => {
   const data: PortfolioData = content
+  const bRef = useRef(null)
+  const aRef = useRef(null)
+  const pRef = useRef(null)
+  const refs: {[key: string]: RefObject<HTMLHeadingElement>} = {'banner': bRef, "about": aRef, "projects": pRef}
   return (
     <Layout>
-      <Navigation />
       <DataContext.Provider value={data}>
-        <Banner />
-        <About />
-        <Project />
+        <Navigation />
+        <Banner/>
+        <About/>
+        <Project/>
+        <Footer/>
       </DataContext.Provider>
     </Layout>
   );

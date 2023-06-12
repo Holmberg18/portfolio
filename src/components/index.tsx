@@ -11,10 +11,12 @@ import Image from 'react-bootstrap/Image'
 import ProjectCard from './ProjectCard'
 import Banner from './Banner'
 import TechStack from './Banner/TechStack'
-import SocialLinks from './Banner/SocialLinks'
+import SocialLinks from './SocialLinks'
 import About from './About'
 import Project from './Project'
+import Footer from './Footer'
 import Form from 'react-bootstrap/Form'
+import Alert from 'react-bootstrap/Alert'
 
 
 export{
@@ -34,5 +36,7 @@ export{
     SocialLinks,
     About,
     Project,
-    Form
+    Footer,
+    Form,
+    Alert
 }

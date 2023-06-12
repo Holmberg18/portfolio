@@ -5,3 +5,4 @@ declare type PortfolioData = {
     }
 }
 declare type DataSection = {[key: string] : JSONObject}
+declare type refObject = {[key: string] : RefObject<HTMLInput>}

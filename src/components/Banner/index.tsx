@@ -1,4 +1,4 @@
-import { FC, useContext, useMemo } from 'react'
+import { FC, useContext, useMemo, RefObject } from 'react'
 import { 
     Container,
     Row, 
@@ -11,6 +11,7 @@ import {
 import DataContext from '@/context/DataContext'
 import './Banner.scss'
 
+
 const Banner: FC = () => {
 
     const data: PortfolioData = useContext(DataContext)
@@ -21,7 +22,7 @@ const Banner: FC = () => {
             <Row>
                 <Col className='d-flex flex-wrap justify-content-center'>
                     <Stack className="mx-4 py-4">
-                        <h1>{banner_data?.title}</h1>
+                        <h1 id="banner">{banner_data?.title}</h1>
                         <p>{banner_data?.welcome}</p>
                         <p>
                             {banner_data?.tech_stack}
