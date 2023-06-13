@@ -1,4 +1,4 @@
-import { FC, useContext, useMemo, RefObject } from 'react'
+import { FC, useContext, useMemo } from 'react'
 import { 
     Container, 
     Row, 
@@ -8,20 +8,17 @@ import {
 } from '@/components'
 import DataContext from '@/context/DataContext'
  
-interface Props {
-    refObj: RefObject<HTMLHeadingElement>
-}
-const Project: FC<Props> = ({ refObj }) => {
+const Project: FC = () => {
 
     const data: PortfolioData = useContext(DataContext)
     const { project1, project2, project_header}: DataSection = useMemo(() => data?.portfolio_data,[data])
 
     return(
-        <Container fluid className="h-100" style={{marginBottom: "25rem"}}>
+        <Container id="projects" fluid className="h-100" style={{marginBottom: "25rem"}}>
             <Row md="auto" className="mb-5 mx-2 justify-content-left">
                 <Col md="auto">
                     <Stack>
-                        <h1 ref={refObj} className="display-4">{project_header.title}</h1>
+                        <h1 className="display-4">{project_header.title}</h1>
                         <p className="lead">{project_header.dev}</p>
                     </Stack>
                 </Col>

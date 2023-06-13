@@ -13,7 +13,7 @@ import { GithubSVG, ExternalLinkSVG } from '@/components/SVG'
 interface Props {
     data: JSONObject,
     img: string,
-    left?: boolean
+    left?: boolean,
 }
 
 
@@ -22,7 +22,7 @@ const ProjectCard: FC<Props> = (props) => {
     const { data, img, left } = props
     const isMobile = window.innerWidth < 768
 
-    const cardVariants = {
+    const cardVariants: DataSection = {
         offscreen: {
             opacity: 0,
             [isMobile ? 'x' : 'y']: 300,
@@ -39,10 +39,11 @@ const ProjectCard: FC<Props> = (props) => {
     }
 
     const stack: JSX.Element = (
-        <Col key={data.title} lg={3} className="m-3">
+        <Col id={data?.style.toLowerCase()} key={data.title} lg={3} className="m-3">
             <Stack>
                 <h3>{data?.title}</h3>
                 <p>{data?.bio}</p>
+                <p><span>{data?.framework}</span> <span>{data?.style}</span></p>
             </Stack>
             <Stack direction="horizontal">
                 {
@@ -77,7 +78,7 @@ const ProjectCard: FC<Props> = (props) => {
                 whileInView="onscreen"
                 viewport={{ once: true}}
             >
-                <Row className="my-5 justify-content-center">
+                <Row id={data?.framework.toLocaleLowerCase()} className="my-5 justify-content-center">
                     {left ? [stack, image] : [image, stack]}
                 </Row>
             </motion.div>

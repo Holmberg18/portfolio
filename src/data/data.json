@@ -17,11 +17,15 @@
         },
         "project1":{
             "title": "Novus Automotive",
-            "bio": "A car manufacturer website that allows users to purchase cars for personal or business use. The website provides an interface for searching, comparing, and purchasing cars."
+            "bio": "A car manufacturer website that allows users to purchase cars for personal or business use. The website provides an interface for searching, comparing, and purchasing cars.",
+            "framework": "React",
+            "style": "Sass"
         },
         "project2":{
             "title": "Aether Mobile",
-            "bio": "A mobile device manufacturer site that allows users to purchase cellular devices. The website provides an interface for searching, comparing, and purchasing smart phones"
+            "bio": "A mobile device manufacturer site that allows users to purchase cellular devices. The website provides an interface for searching, comparing, and purchasing smart phones",
+            "framework": "Vue",
+            "style": "Less"
         },
         "footer":{
             "connected": "Feel free to connect with any of my social network accounts",

@@ -17,7 +17,7 @@ const Footer: FC = () => {
     const center = "d-flex align-items-center"
 
     return(
-        <footer className="page-footer bg-light text-muted mt-5" >
+        <footer id="contact" className="page-footer bg-light text-muted mt-5" >
             <Container fluid>
                 <Row className="border-bottom p-3">
                     <Col className={`${center}`}>
@@ -39,9 +39,9 @@ const Footer: FC = () => {
                     <Col>
                         <Stack>
                             <h6 className="text-uppercase fw-bold">{footer.contact}</h6>
-                            <p><FontAwesomeIcon icon={faHome} /> {footer.address}</p>
-                            <p><FontAwesomeIcon icon={faEnvelope} /> {footer.email}</p>
-                            <p><FontAwesomeIcon icon={faPhone} /> {footer.phone}</p>
+                            <p id="address"><FontAwesomeIcon icon={faHome} /> {footer.address}</p>
+                            <p id="email"><FontAwesomeIcon icon={faEnvelope} /> {footer.email}</p>
+                            <p id="phone"><FontAwesomeIcon icon={faPhone} /> {footer.phone}</p>
                         </Stack>
                     </Col>
                 </Row>

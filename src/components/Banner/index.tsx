@@ -1,4 +1,4 @@
-import { FC, useContext, useMemo, RefObject } from 'react'
+import { FC, useContext, useMemo } from 'react'
 import { 
     Container,
     Row, 
@@ -18,11 +18,11 @@ const Banner: FC = () => {
     const banner_data: JSONObject = useMemo(() => data?.portfolio_data.intro,[data])
 
     return(
-        <Container fluid className="banner-container d-flex justify-content-center p-5 ">
+        <Container id="banner" fluid className="banner-container d-flex justify-content-center p-5 ">
             <Row>
                 <Col className='d-flex flex-wrap justify-content-center'>
                     <Stack className="mx-4 py-4">
-                        <h1 id="banner">{banner_data?.title}</h1>
+                        <h1>{banner_data?.title}</h1>
                         <p>{banner_data?.welcome}</p>
                         <p>
                             {banner_data?.tech_stack}
