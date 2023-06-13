@@ -10,7 +10,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Image from 'react-bootstrap/Image'
 import ProjectCard from './ProjectCard'
 import Banner from './Banner'
-import TechStack from './Banner/TechStack'
 import SocialLinks from './SocialLinks'
 import About from './About'
 import Project from './Project'
@@ -32,7 +31,6 @@ export{
     Image,
     ProjectCard,
     Banner,
-    TechStack,
     SocialLinks,
     About,
     Project,

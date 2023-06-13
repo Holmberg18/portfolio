@@ -3,16 +3,16 @@ import { Container, Row, Col } from "@/components"
 import { GithubSVG, LinkedinSVG } from '@/components/SVG'
 
 interface Props {
-    socialLinks: {[key: string]: string}
+    socialLinks: JSONObject
 }
 const SocialLinks: FC<Props> = ({ socialLinks }) => {
 
     return(
-        <Container className="p-0 mb-3">
+        <Container className="mb-3">
             <Row>
                 <Col>
                     <a className="mx-1" href={socialLinks.github} target='_blank' rel="noreferrer">
-                        <GithubSVG />
+                        <GithubSVG x={28} y={28} />
                     </a>
                     <a className="mx-1" href={socialLinks.linkedin} target="_blank" rel="noreferrer">
                         <LinkedinSVG />

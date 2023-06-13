@@ -14,9 +14,9 @@ const Project: FC = () => {
     const { project1, project2, project_header}: DataSection = useMemo(() => data?.portfolio_data,[data])
 
     return(
-        <Container id="projects" fluid className="h-100" style={{marginBottom: "25rem"}}>
-            <Row md="auto" className="mb-5 mx-2 justify-content-left">
-                <Col md="auto">
+        <Container id="projects" fluid className="px-3" style={{marginBottom: "25rem"}}>
+            <Row md="auto" className="mb-5 mx-2 px-5 justify-content-center">
+                <Col md="auto" lg={7}>
                     <Stack>
                         <h1 className="display-4">{project_header.title}</h1>
                         <p className="lead">{project_header.dev}</p>

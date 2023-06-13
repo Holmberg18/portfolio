@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { ReactNode } from 'react'
 import { 
     TypeScriptSVG,
     ReactSVG, 
@@ -9,8 +9,7 @@ import {
     ReduxSVG
 } from '@/components/SVG'
 
-const TechStack: FC = () => {
-    return(
+export const techStack: ReactNode = (
         <>
             <ReactSVG />
             <TypeScriptSVG />
@@ -20,7 +19,4 @@ const TechStack: FC = () => {
             <LessSVG />
             <ReduxSVG />
         </>
-    )
-}
-
-export default TechStack
+)
