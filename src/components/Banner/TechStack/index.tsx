@@ -3,7 +3,9 @@ import {
     TypeScriptSVG,
     ReactSVG, 
     JavaScriptSVG, 
-    NextjsSVG,
+    VueSVG,
+    SassSVG,
+    LessSVG,
     ReduxSVG
 } from '@/components/SVG'
 
@@ -13,7 +15,9 @@ const TechStack: FC = () => {
             <ReactSVG />
             <TypeScriptSVG />
             <JavaScriptSVG />
-            <NextjsSVG />
+            <VueSVG />
+            <SassSVG />
+            <LessSVG />
             <ReduxSVG />
         </>
     )
