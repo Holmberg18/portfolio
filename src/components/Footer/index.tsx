@@ -14,13 +14,13 @@ const Footer: FC = () => {
 
     const data: PortfolioData = useContext(DataContext)
     const { intro:social_links, footer }: DataSection = useMemo(() => data?.portfolio_data, [data])
-    const center = "d-flex align-items-center"
+    const center = "d-flex justify-content-center"
 
     return(
-        <footer id="contact" className="page-footer bg-light text-muted mt-5" >
-            <Container fluid>
+        <footer id="contact" className="page-footer bg-light text-muted" >
+            <Container fluid >
                 <Row className="border-bottom p-3">
-                    <Col className={`${center}`}>
+                    <Col className={center}>
                         <span>{footer.connected}</span>
                     </Col>
                     <Col className={`${center}`}>
@@ -29,12 +29,12 @@ const Footer: FC = () => {
                 </Row>
                 <Row className="p-3">
                     <Col className={`${center}`}>
-                        <Stack className="">
+                        <div className="d-flex flex-column">
                             <h6 className="text-uppercase fw-bold">
                             <FontAwesomeIcon icon={faGem} /> {footer.name}
                             </h6>
                             <p>{footer.bio}</p>
-                        </Stack>
+                        </div>
                     </Col>
                     <Col>
                         <Stack>

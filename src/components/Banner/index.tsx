@@ -27,7 +27,7 @@ const Banner: FC = () => {
                         <p className="lead">{banner_data?.intro.welcome}</p>
                         <p className="lead">
                             {banner_data.intro.tech_stack}
-                            <div className="vr h-100 align-middle border border-dark mx-1" />
+                            <div className="vr align-middle border border-dark mx-1" />
                             {banner_data.stack}
                         </p>
                         <SocialLinks socialLinks={{

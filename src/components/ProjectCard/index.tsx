@@ -22,7 +22,7 @@ const ProjectCard: FC<Props> = (props) => {
     const { data, img, left } = props
     const isMobile = window.innerWidth < 768
 
-    const cardVariants: DataSection = {
+    const cardVariants: JSONObject = {
         offscreen: {
             opacity: 0,
             [isMobile ? 'x' : 'y']: 300,

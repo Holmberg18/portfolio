@@ -11,7 +11,7 @@ import DataContext from '@/context/DataContext'
 const Project: FC = () => {
 
     const data: PortfolioData = useContext(DataContext)
-    const { project1, project2, project_header}: DataSection = useMemo(() => data?.portfolio_data,[data])
+    const { project1, project2, project_header}: JSONObject = useMemo(() => data?.portfolio_data,[data])
 
     return(
         <Container id="projects" fluid className="px-3" style={{marginBottom: "25rem"}}>

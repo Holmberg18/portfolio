@@ -8,7 +8,7 @@ interface Props {
 const SocialLinks: FC<Props> = ({ socialLinks }) => {
 
     return(
-        <Container className="mb-3">
+        <Container className="px-2 mb-3">
             <Row>
                 <Col>
                     <a className="mx-1" href={socialLinks.github} target='_blank' rel="noreferrer">

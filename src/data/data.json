@@ -1,5 +1,12 @@
 {
     "portfolio_data": {
+        "nav": {
+            "brand": "Holmberg.dev",
+            "home" : "Home",
+            "about": "About",
+            "projects": "Projects",
+            "contact": "Contact"
+        },
         "intro":{
             "title": "Jon Holmberg",
             "welcome": "Hi, I'm a passionate Front-end Developer based in San Francisco, CA.",

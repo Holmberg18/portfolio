@@ -1,10 +1,11 @@
-import { FC, ChangeEvent} from 'react'
+import { FC, useContext, useMemo, ChangeEvent} from 'react'
 import { 
   Container,
   Nav,
   Navbar,
   Form } 
 from '@/components'
+import DataContext from '@/context/DataContext'
 
 
 const Navigation: FC = () => {
@@ -17,10 +18,13 @@ const Navigation: FC = () => {
     })
   }
 
+  const data: PortfolioData = useContext(DataContext)
+  const nav_data: JSONObject = useMemo(() => data?.portfolio_data.nav,[data])
+
   return(
-      <Navbar sticky="top" bg="light" expand="lg">
+    <Navbar sticky="top" bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Holmberg.dev</Navbar.Brand>
+        <Navbar.Brand href="#">{nav_data?.brand}</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -28,10 +32,10 @@ const Navigation: FC = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#banner">Home</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#projects">Projects</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="#banner">{nav_data?.home}</Nav.Link>
+          <Nav.Link href="#about">{nav_data?.about}</Nav.Link>
+          <Nav.Link href="#projects">{nav_data?.projects}</Nav.Link>
+          <Nav.Link href="#contact">{nav_data?.contact}</Nav.Link>
         </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -39,7 +43,7 @@ const Navigation: FC = () => {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-              onChange={(e) => handleChange(e)}
+              onChange={handleChange}
             />
           </Form>
         </Navbar.Collapse>
