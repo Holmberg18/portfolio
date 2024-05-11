@@ -76,7 +76,7 @@ const ProjectCard: FC<Props> = (props) => {
                 variants={cardVariants}
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true}}
+                viewport={{once: true}}
             >
                 <Row id={data?.framework.toLocaleLowerCase()} className="my-5 justify-content-center">
                     {left ? [stack, image] : [image, stack]}
