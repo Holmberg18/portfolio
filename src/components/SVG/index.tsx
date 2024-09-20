@@ -76,12 +76,21 @@ const ExternalLinkSVG: FC<Props> = ({ x = 32, y = 32 }) => {
     )
 }
 
-const VueSVG: FC<Props> = ({ x = 32, y = 32 }) => {
+const TailwindSVG: FC<Props> = ({ x = 32, y = 32 }) => {
     return (
-        <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width={x} height={y}>
-            <title>Vue</title>
-            <polygon fill="#81c784" points="23.987,17 18.734,8 2.974,8 23.987,44 45,8 29.24,8" /><polygon fill="#455a64" points="29.24,8 23.987,17 18.734,8 11.146,8 23.987,30 36.828,8" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 -8 48 48" width={x} height={y}>
+            <title>Tailwind</title>
+            <g clip-path="url(#prefix__clip0)">
+                <path fill="#38bdf8" fill-rule="evenodd" d="M24 0c-6.4 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.8.448 3.096 1.76 4.52 3.2C26.88 11.68 29.68 14.8 36 14.8c6.4 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.8-.448-3.096-1.76-4.52-3.2C33.12 3.04 30.32 0 24 0zM12 14.8C5.6 14.8 1.6 18 0 24c2.4-3.2 5.2-4.4 8.4-3.6 1.8.448 3.096 1.76 4.52 3.2C15.88 26.08 18.68 29.2 24 29.2c6.4 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.8-.448-3.096-1.76-4.52-3.2C21.12 16.32 18.32 14.8 12 14.8z" clip-rule="evenodd" />
+            </g>
+            <defs>
+                <clipPath id="prefix__clip0">
+                    <path fill="#fff" d="M0 0h48v48H0z" />
+                </clipPath>
+            </defs>
         </svg>
+
+
     )
 }
 
@@ -162,9 +171,9 @@ export {
     TypeScriptSVG,
     ReactSVG,
     JavaScriptSVG,
-    VueSVG,
     NextjsSVG,
     ReduxSVG,
+    TailwindSVG,
     SassSVG,
     LessSVG,
     GithubSVG,

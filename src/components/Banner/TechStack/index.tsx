@@ -3,10 +3,10 @@ import {
     TypeScriptSVG,
     ReactSVG, 
     JavaScriptSVG, 
-    VueSVG,
     SassSVG,
     LessSVG,
-    ReduxSVG
+    ReduxSVG,
+    TailwindSVG
 } from '@/components/SVG'
 
 export const techStack: ReactNode = (
@@ -14,7 +14,7 @@ export const techStack: ReactNode = (
             <ReactSVG />
             <TypeScriptSVG />
             <JavaScriptSVG />
-            <VueSVG />
+            <TailwindSVG />
             <SassSVG />
             <LessSVG />
             <ReduxSVG />

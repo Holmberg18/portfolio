@@ -1,4 +1,4 @@
-import { FC, useContext, useMemo } from 'react'
+import { useContext, useMemo } from 'react'
 import { 
     Container, 
     Row, 
@@ -8,10 +8,10 @@ import {
 } from '@/components'
 import DataContext from '@/context/DataContext'
  
-const Project: FC = () => {
+const Project = () => {
 
     const data: PortfolioData = useContext(DataContext)
-    const { project1, project2, project_header}: JSONObject = useMemo(() => data?.portfolio_data,[data])
+    const { project1, project_header}: JSONObject = useMemo(() => data?.portfolio_data,[data])
 
     return(
         <Container id="projects" fluid className="px-3" style={{marginBottom: "25rem"}}>
@@ -23,8 +23,7 @@ const Project: FC = () => {
                     </Stack>
                 </Col>
             </Row>
-            <ProjectCard data={project1} img="novus_auto" />
-            <ProjectCard left data={project2} img="aether_mobile" />
+            <ProjectCard data={project1} img="spice_delight" />
         </Container>
     )
 }

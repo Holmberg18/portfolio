@@ -23,16 +23,12 @@
             "dev": "Projects with a diverse toolset"
         },
         "project1":{
-            "title": "Novus Automotive",
-            "bio": "A car manufacturer website that allows users to purchase cars for personal or business use. The website provides an interface for searching, comparing, and purchasing cars.",
-            "framework": "React",
-            "style": "Sass"
-        },
-        "project2":{
-            "title": "Aether Mobile",
-            "bio": "A mobile device manufacturer site that allows users to purchase cellular devices. The website provides an interface for searching, comparing, and purchasing smart phones",
-            "framework": "Vue",
-            "style": "Less"
+            "title": "Spice Delight App",
+            "bio": "A go-to app for exploring mouthwatering food items and recipes made to order. Whether you're a seasoned chef or a culinary enthusiast, our app will tantalize your taste buds and inspire your next cooking adventure!",
+            "framework": "React Vite",
+            "style": "Tailwind",
+            "github": "https://github.com/Holmberg18/spice-delight-app",
+            "demo": "https://ashy-pebble-00588ee0f.5.azurestaticapps.net"
         },
         "footer":{
             "connected": "Feel free to connect with any of my social network accounts",

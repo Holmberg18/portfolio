@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import { motion } from "framer-motion"
 import {
     Row,
@@ -17,7 +16,7 @@ interface Props {
 }
 
 
-const ProjectCard: FC<Props> = (props) => {
+const ProjectCard = (props: Props) => {
 
     const { data, img, left } = props
     const isMobile = window.innerWidth < 768
@@ -48,7 +47,7 @@ const ProjectCard: FC<Props> = (props) => {
             <Stack direction="horizontal">
                 {
                     ['git', 'ext'].map((type) => (
-                        <Alert.Link key={type} href="#" className="mx-2 link-underline link-underline-opacity-0">{
+                        <Alert.Link key={type} href={type === "git" ? data.github : data.demo} className="mx-2 link-underline link-underline-opacity-0">{
                             type === 'git' ? (<p><GithubSVG x={24} y={24} /> <span className='mx-1'>Github</span></p>) : 
                             (<p><ExternalLinkSVG /> <span>Live Demo</span></p>)
                         }
