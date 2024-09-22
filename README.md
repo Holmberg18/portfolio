@@ -5,6 +5,7 @@ This site showcases my expertise in web development, covering modern frameworks,
 Spice Delight App
 * Built using React with Vite for optimized performance and fast development.
 * Serverless Architecture: Deployed on Azure with a static web app, connected to an Azure Function API for backend operations.
+* Utilized Redux for state management across the Spice Delight app, providing a consistent and predictable state across the application’s components.
 * Responsive Design: Styled using Tailwind CSS for a mobile-first, fully responsive layout.
 * Backend with ASP.NET Web API: The backend and database for the Spice Delight app are powered by ASP.NET Web API, ensuring a robust and scalable solution for data management and business logic.
 
