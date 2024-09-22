@@ -2,8 +2,8 @@
 
 This site showcases my expertise in web development, covering modern frameworks, cloud platforms, and eCommerce solutions. Below is an overview of the technologies and tools I've used to build this site and the skills I bring to each area.
 
-Features
-* Spice Delight App: Built using React with Vite for optimized performance and fast development.
+Spice Delight App
+* Built using React with Vite for optimized performance and fast development.
 * Serverless Architecture: Deployed on Azure with a static web app, connected to an Azure Function API for backend operations.
 * Responsive Design: Styled using Tailwind CSS for a mobile-first, fully responsive layout.
 * Backend with ASP.NET Web API: The backend and database for the Spice Delight app are powered by ASP.NET Web API, ensuring a robust and scalable solution for data management and business logic.
