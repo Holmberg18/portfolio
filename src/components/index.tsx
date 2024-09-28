@@ -13,6 +13,7 @@ import Banner from './Banner'
 import SocialLinks from './SocialLinks'
 import About from './About'
 import Project from './Project'
+import Company from './Company'
 import Footer from './Footer'
 import Form from 'react-bootstrap/Form'
 import Alert from 'react-bootstrap/Alert'
@@ -34,6 +35,7 @@ export{
     SocialLinks,
     About,
     Project,
+    Company,
     Footer,
     Form,
     Alert

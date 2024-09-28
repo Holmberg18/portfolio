@@ -9,23 +9,27 @@
         },
         "intro":{
             "title": "Jon Holmberg",
-            "welcome": "Hi, I'm a passionate Front-end Developer based in San Francisco, CA.",
+            "welcome": "Hi, I'm a passionate Full-stack Developer based in San Francisco, CA.",
             "tech_stack": "Tech Stack ",
             "github": "https://github.com/Holmberg18",
             "linkedin": "https://www.linkedin.com/in/holmbergj"
         },
         "about":{
             "title": "About Me",
-            "bio": "With six years of experience, I have specialized in building captivating user interfaces using JavaScript, React, and TypeScript. My expertise lies in developing dynamic and responsive web applications that provide seamless user experiences. By leveraging React's component-based architecture, I create reusable and modular UI elements, enhancing development efficiency. The integration of TypeScript into my workflow helps catch errors early, improves code readability, and enables effective collaboration within development teams."
+            "bio_1": "With six years of experience, I specialize in building user interfaces using JavaScript, React, and TypeScript to develop dynamic, responsive web applications. I collaborated with marketing and product teams, resolved project bugs, and ensured daily site testing for optimal performance.",
+            "bio_2": "I have maintained and developed over 50 Magento sites, upgrading listing pipelines for dynamic auction creation. I built buyer/seller profile UIs using ReactJS, Redux-saga, Hooks, Router, and Formik, and improved SEO through strategic keywords and friendly URLs.",
+            "bio_3": "As the chief technical resource for Sam’s Club auctions, I developed APIs for CCPA request processing and enhanced SSO security. I also created a PHP shipping API for Walmart BStock to generate shipping quotes. Additionally, I designed features that allow buyers to select shipping addresses and search auctions by location and category."
         },
         "project_header":{
             "title": "Portfolio",
-            "dev": "Projects with a diverse toolset"
+            "dev": "Projects with a diverse toolset",
+            "company_header": "My Clients",
+            "company_notes": "Company auction sites I developed while at B-Stock Solutions"
         },
         "project1":{
             "title": "Spice Delight App",
             "bio": "A go-to app for exploring mouthwatering food items and recipes made to order. Whether you're a seasoned chef or a culinary enthusiast, our app will tantalize your taste buds and inspire your next cooking adventure!",
-            "framework": "React Vite",
+            "framework": "React Vite, Redux, ASP.net,",
             "style": "Tailwind",
             "github": "https://github.com/Holmberg18/spice-delight-app",
             "demo": "https://ashy-pebble-00588ee0f.5.azurestaticapps.net"

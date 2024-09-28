@@ -5,6 +5,10 @@ import {
     JavaScriptSVG, 
     SassSVG,
     LessSVG,
+    NETSVG,
+    MagentoSVG,
+    PHPSVG,
+    MysqlSVG,
     ReduxSVG,
     TailwindSVG
 } from '@/components/SVG'
@@ -18,5 +22,9 @@ export const techStack: ReactNode = (
             <SassSVG />
             <LessSVG />
             <ReduxSVG />
+            <NETSVG />
+            <MagentoSVG />
+            <PHPSVG />
+            <MysqlSVG />
         </>
 )

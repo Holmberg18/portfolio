@@ -71,7 +71,7 @@ const ProjectCard = (props: Props) => {
 
     return(
             <motion.div
-                className="d-flex justify-content-center"
+                className="d-flex justify-content-center mb-5"
                 variants={cardVariants}
                 initial="offscreen"
                 whileInView="onscreen"
