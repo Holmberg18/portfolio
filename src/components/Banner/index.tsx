@@ -22,7 +22,7 @@ const Banner: FC = () => {
         <Container fluid id="banner" style={{ backgroundColor: "#ededed" }} className="p-3 mb-5">
             <Row className="d-flex justify-content-center">
                 <Col sm={12} md={5} lg={4} className="d-flex justify-content-center">
-                    <Stack className="gap-2 mx-auto">
+                    <Stack className="gap-2 mx-auto py-3">
                         <h1 className="display-4">{banner_data?.intro.title}</h1>
                         <p className="lead">{banner_data?.intro.welcome}</p>
                         <div className="lead">

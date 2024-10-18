@@ -39,9 +39,7 @@ const Footer: FC = () => {
                     <Col>
                         <Stack>
                             <h6 className="text-uppercase fw-bold">{footer.contact}</h6>
-                            <p id="address"><FontAwesomeIcon icon={faHome} /> {footer.address}</p>
                             <p id="email"><FontAwesomeIcon icon={faEnvelope} /> {footer.email}</p>
-                            <p id="phone"><FontAwesomeIcon icon={faPhone} /> {footer.phone}</p>
                         </Stack>
                     </Col>
                 </Row>
