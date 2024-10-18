@@ -8,7 +8,7 @@ const About: FC = () => {
     const about_data: JSONObject = useMemo(() => data?.portfolio_data.about,[data])
 
     return(
-        <Container fluid id="about" className="d-flex align-items-center h-100">
+        <Container fluid id="about" className="d-flex align-items-center h-100 my-5 justify-content-center">
             <Row className="justify-content-center">
                 <Col className="my-auto mx-3" md="auto" xs={12} sm={10}>
                     <Image

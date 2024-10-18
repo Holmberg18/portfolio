@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { 
-  Layout,
+  Container,
   Navigation, 
   Banner,
   About,
@@ -17,7 +17,7 @@ const App: FC = () => {
   const data: PortfolioData = content
 
   return (
-    <Layout>
+    <Container fluid>
       <DataContext.Provider value={data}>
         <Navigation />
         <Banner/>
@@ -25,7 +25,7 @@ const App: FC = () => {
         <Project/>
         <Footer/>
       </DataContext.Provider>
-    </Layout>
+    </Container>
   );
 }
 

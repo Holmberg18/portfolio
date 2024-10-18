@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import {
+    Container,
     Row,
     Col,
     Image
@@ -31,7 +32,7 @@ const Company = () => {
     }
 
     const CompanyImage = ({ img }: ImgProps) => (
-        <Col key={img} sm={11} md="auto" className="mx-3">
+        <Col key={img} sm={11} md="auto" className="d-flex justify-content-center m-3">
             <Image
                 className=""
                 fluid
@@ -49,22 +50,22 @@ const Company = () => {
             whileInView="onscreen"
             viewport={{ once: true }}
         >
-            <Col sm={11} md="auto" className="mx-3">
-                <Row className="my-5 mx-3 justify-content-center">
+            <Container fluid className="mx-3 p-1">
+                <Row xs={12} sm={10} md={6} className="my-5 mx-3 justify-content-center">
                     {
                         ["sams_club", "costco", "walmart", "att"].map((logo) =>
-                            <CompanyImage img={logo} />
+                            <CompanyImage key={logo} img={logo} />
                         )
                     }
                 </Row>
-                <Row className="my-5 mx-3 justify-content-center">
+                <Row xs={12} sm={10} md={6} className="my-5 mx-3 justify-content-center">
                     {
                         ["amazon", "target", "best_buy", "samsung"].map((logo) =>
-                            <CompanyImage img={logo} />
+                            <CompanyImage key={logo} img={logo} />
                         )
                     }
                 </Row>
-            </Col>
+            </Container>
         </motion.div>
     )
 }

@@ -1,5 +1,4 @@
 import { FC, ReactNode } from 'react'
-import './Layout.scss'
 
 interface Props {
     children: ReactNode
@@ -7,7 +6,7 @@ interface Props {
 
 const Layout: FC<Props> = ({ children }) => {
     return (
-        <div className='h-100'>
+        <div>
             { children }
         </div>
     )
